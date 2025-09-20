@@ -25,6 +25,7 @@ class Main1{
         try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
             oos.writeObject(animal);
+            System.out.println("Об'єкт классу " + Animal.class + " записано у " + file.getName());
         } catch (IOException e) {
             e.printStackTrace();
         }
